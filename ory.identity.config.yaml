@@ -1,0 +1,308 @@
+cookies:
+  domain: interesting-chaplygin-524x1dtdto.projects.oryapis.com
+  path: /
+  same_site: Lax
+courier:
+  channels:
+  - id: sms
+    request_config:
+      auth:
+        config:
+          password: ""
+          user: AXXXXXXX
+        type: basic_auth
+      body: https://storage.googleapis.com/bac-gcs-production/68dbe76c2f176b9bb0e10953d13c9d3fbf8c2baf240ee10304a9e84b78ade91c89bf7b110c88e9f06f682ff46ee9e7d70289a0a095597d8723ffbccc97838392.jsonnet
+      headers:
+        Content-Type: application/x-www-form-urlencoded
+      method: POST
+      url: https://rdr8qhdg-5262.euw.devtunnels.ms/weatherforecast
+    type: http
+  smtp:
+    from_name: Oleh Krotenko's Project via Ory
+  templates:
+    login_code:
+      valid:
+        email:
+          body: {}
+        sms:
+          body:
+            plaintext: base64://WW91ciBsb2dpbiBjb2RlIGlzOiB7eyAuTG9naW5Db2RlIH19
+    recovery:
+      invalid:
+        email:
+          body: {}
+      valid:
+        email:
+          body: {}
+    recovery_code:
+      invalid:
+        email:
+          body: {}
+      valid:
+        email:
+          body: {}
+    registration_code:
+      valid:
+        email:
+          body: {}
+    verification:
+      invalid:
+        email:
+          body: {}
+      valid:
+        email:
+          body: {}
+    verification_code:
+      invalid:
+        email:
+          body: {}
+      valid:
+        email:
+          body: {}
+        sms:
+          body:
+            plaintext: base64://WW91ciB2ZXJpZmljYXRpb24gY29kZSBpczoge3sgLlZlcmlmaWNhdGlvbkNvZGUgfX0=
+feature_flags:
+  cacheable_sessions: false
+  cacheable_sessions_max_age: 2m30s
+  use_continue_with_transitions: false
+identity:
+  default_schema_id: preset://email
+  schemas:
+  - id: preset://email
+    url: base64://ewogICIkaWQiOiAiaHR0cHM6Ly9zY2hlbWFzLm9yeS5zaC9wcmVzZXRzL2tyYXRvcy9pZGVudGl0eS5lbWFpbC5zY2hlbWEuanNvbiIsCiAgIiRzY2hlbWEiOiAiaHR0cDovL2pzb24tc2NoZW1hLm9yZy9kcmFmdC0wNy9zY2hlbWEjIiwKICAidGl0bGUiOiAiUGVyc29uIiwKICAidHlwZSI6ICJvYmplY3QiLAogICJwcm9wZXJ0aWVzIjogewogICAgInRyYWl0cyI6IHsKICAgICAgInR5cGUiOiAib2JqZWN0IiwKICAgICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgImVtYWlsIjogewogICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICJmb3JtYXQiOiAiZW1haWwiLAogICAgICAgICAgInRpdGxlIjogIkUtTWFpbCIsCiAgICAgICAgICAib3J5LnNoL2tyYXRvcyI6IHsKICAgICAgICAgICAgImNyZWRlbnRpYWxzIjogewogICAgICAgICAgICAgICJwYXNzd29yZCI6IHsKICAgICAgICAgICAgICAgICJpZGVudGlmaWVyIjogdHJ1ZQogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgIndlYmF1dGhuIjogewogICAgICAgICAgICAgICAgImlkZW50aWZpZXIiOiB0cnVlCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAidG90cCI6IHsKICAgICAgICAgICAgICAgICJhY2NvdW50X25hbWUiOiB0cnVlCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAiY29kZSI6IHsKICAgICAgICAgICAgICAgICJpZGVudGlmaWVyIjogdHJ1ZSwKICAgICAgICAgICAgICAgICJ2aWEiOiAiZW1haWwiCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9LAogICAgICAgICAgICAicmVjb3ZlcnkiOiB7CiAgICAgICAgICAgICAgInZpYSI6ICJlbWFpbCIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgInZlcmlmaWNhdGlvbiI6IHsKICAgICAgICAgICAgICAidmlhIjogImVtYWlsIgogICAgICAgICAgICB9CiAgICAgICAgICB9LAogICAgICAgICAgIm1heExlbmd0aCI6IDMyMAogICAgICAgIH0KICAgICAgfSwKICAgICAgInJlcXVpcmVkIjogWwogICAgICAgICJlbWFpbCIKICAgICAgXSwKICAgICAgImFkZGl0aW9uYWxQcm9wZXJ0aWVzIjogZmFsc2UKICAgIH0KICB9Cn0K
+  - id: 2a9d5727b1b42ec98ed2f52ba68822156d1cc70b1096fd9d9b0d0a785782aa7dead7870bbf80b38356f2e6425cedc9b7d4b9622673515abb790efaeb3b6748ce
+    url: https://storage.googleapis.com/bac-gcs-production/2a9d5727b1b42ec98ed2f52ba68822156d1cc70b1096fd9d9b0d0a785782aa7dead7870bbf80b38356f2e6425cedc9b7d4b9622673515abb790efaeb3b6748ce.json
+  - id: f3487a058551fc28311e6ea34618b54d2959eab4a247e82b4ebcb16623f5e1c3c51ef8ac8f35dd4fd541ef308bfb9db2c5816e7d1653e77c7810dc28934f8bd3
+    url: https://storage.googleapis.com/bac-gcs-production/f3487a058551fc28311e6ea34618b54d2959eab4a247e82b4ebcb16623f5e1c3c51ef8ac8f35dd4fd541ef308bfb9db2c5816e7d1653e77c7810dc28934f8bd3.json
+  - id: d3b1b5fe52d9d5b9b7115acc090d464cad58ec120783339c4599f9c450e118bda7245c986c7998dd552a43adada02bcee7a3f098ae2e010a5425b755d3ae883e
+    url: https://storage.googleapis.com/bac-gcs-production/d3b1b5fe52d9d5b9b7115acc090d464cad58ec120783339c4599f9c450e118bda7245c986c7998dd552a43adada02bcee7a3f098ae2e010a5425b755d3ae883e.json
+  - id: 97f2444753e553acb191df5d49a7ad482639abc15964a28d5b278f8cf5a1f10ed76c535bd9a0d4c81a9e855559d89bc300891df28a82f9b1d99af2599947a5ec
+    url: https://storage.googleapis.com/bac-gcs-production/97f2444753e553acb191df5d49a7ad482639abc15964a28d5b278f8cf5a1f10ed76c535bd9a0d4c81a9e855559d89bc300891df28a82f9b1d99af2599947a5ec.json
+  - id: 89395a6c19b06d58e8ab7c61b3b1162e25b4ff2956313fd43e1553d44172ed8dca7b7156169d058921807db01e9d3c7b698380b0a9733bba55b81c3564bf2ef3
+    url: https://storage.googleapis.com/bac-gcs-production/89395a6c19b06d58e8ab7c61b3b1162e25b4ff2956313fd43e1553d44172ed8dca7b7156169d058921807db01e9d3c7b698380b0a9733bba55b81c3564bf2ef3.json
+  - id: 86ea0d45c9e08998be1c3aacfdcf68a4295bf89986ff0fa333c230ac25c039590fea27f175e8ed63d96fec7c0b7830c2e9d7d2c85e162af8f3c8683049263cec
+    url: https://storage.googleapis.com/bac-gcs-production/86ea0d45c9e08998be1c3aacfdcf68a4295bf89986ff0fa333c230ac25c039590fea27f175e8ed63d96fec7c0b7830c2e9d7d2c85e162af8f3c8683049263cec.json
+  - id: 8f06fdbcb2a5b770eb34681204ad2a4ff752cbef355e4c6f5164aef6ce55977574a628a4c7c83aeda9dd3014ab17986b9a78223c89cc470c7d5a001fdcd5f44f
+    url: https://storage.googleapis.com/bac-gcs-production/8f06fdbcb2a5b770eb34681204ad2a4ff752cbef355e4c6f5164aef6ce55977574a628a4c7c83aeda9dd3014ab17986b9a78223c89cc470c7d5a001fdcd5f44f.json
+  - id: daaaf624079e66a4cd10b0124e0174ae8b0983b3fe6e02f216918354f489480e9c26d185b3a85ebe01f3fc1d9754cb494c66414496290bf4a6efda42dca99d0c
+    url: https://storage.googleapis.com/bac-gcs-production/daaaf624079e66a4cd10b0124e0174ae8b0983b3fe6e02f216918354f489480e9c26d185b3a85ebe01f3fc1d9754cb494c66414496290bf4a6efda42dca99d0c.json
+  - id: 9b1620e20d37e6bce7f8569a02068bb0ffeccec6c9a74496dcf7c22e874a0ed680b1c7b8aee35e8e881862bdf1a719a9672263e754cc12695fb721e57b2fbefa
+    url: https://storage.googleapis.com/bac-gcs-production/9b1620e20d37e6bce7f8569a02068bb0ffeccec6c9a74496dcf7c22e874a0ed680b1c7b8aee35e8e881862bdf1a719a9672263e754cc12695fb721e57b2fbefa.json
+  - id: b17fb1c18f50e8958f5754d119956034cdf7b180c803356581a5338210297fc1a13d17d9f668d3b752d9dab242766563fe14261a9404bffcf60ace80cdd47046
+    url: https://storage.googleapis.com/bac-gcs-production/b17fb1c18f50e8958f5754d119956034cdf7b180c803356581a5338210297fc1a13d17d9f668d3b752d9dab242766563fe14261a9404bffcf60ace80cdd47046.json
+  - id: 7fe288b9ca8266aa24072a1b7197c81981c7f8469bfc844c488597adb6e8bcd68243e83e60fe30934a533356f47ddb4851621062576957f4f1e8b10787a713e0
+    url: https://storage.googleapis.com/bac-gcs-production/7fe288b9ca8266aa24072a1b7197c81981c7f8469bfc844c488597adb6e8bcd68243e83e60fe30934a533356f47ddb4851621062576957f4f1e8b10787a713e0.json
+  - id: 7499737fd94f172adc19d5c7a8366b55c6984fa65aa18c6fa6d957db640f98dfdcfdf87afd81164980d0c7fd03a1b12a3a0f48357d0b708b8ef838960b8b78fe
+    url: https://storage.googleapis.com/bac-gcs-production/7499737fd94f172adc19d5c7a8366b55c6984fa65aa18c6fa6d957db640f98dfdcfdf87afd81164980d0c7fd03a1b12a3a0f48357d0b708b8ef838960b8b78fe.json
+  - id: f3e3667cd925ed6e9126f0c58c2be79baef3a2dce1ca6f27eb36b41a00d36abac6d9928e418e09ffbe7178b63b3ae5ac9b95e2bb47acc7ebf18b02d191f1e12d
+    url: https://storage.googleapis.com/bac-gcs-production/f3e3667cd925ed6e9126f0c58c2be79baef3a2dce1ca6f27eb36b41a00d36abac6d9928e418e09ffbe7178b63b3ae5ac9b95e2bb47acc7ebf18b02d191f1e12d.json
+  - id: 7812575a71b768b6abe7463948e32471e181e7858e857f8e5a63d70c87a8a5ab4e95c7389783df8e21f0b685eeec89f66e7e7f60467c161f709af66942af2daf
+    url: https://storage.googleapis.com/bac-gcs-production/7812575a71b768b6abe7463948e32471e181e7858e857f8e5a63d70c87a8a5ab4e95c7389783df8e21f0b685eeec89f66e7e7f60467c161f709af66942af2daf.json
+  - id: preset://username
+    url: base64://ewogICIkaWQiOiAiaHR0cHM6Ly9zY2hlbWFzLm9yeS5zaC9wcmVzZXRzL2tyYXRvcy9pZGVudGl0eS51c2VybmFtZS5zY2hlbWEuanNvbiIsCiAgIiRzY2hlbWEiOiAiaHR0cDovL2pzb24tc2NoZW1hLm9yZy9kcmFmdC0wNy9zY2hlbWEjIiwKICAidGl0bGUiOiAiUGVyc29uIiwKICAidHlwZSI6ICJvYmplY3QiLAogICJwcm9wZXJ0aWVzIjogewogICAgInRyYWl0cyI6IHsKICAgICAgInR5cGUiOiAib2JqZWN0IiwKICAgICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgInVzZXJuYW1lIjogewogICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICJ0aXRsZSI6ICJVc2VybmFtZSIsCiAgICAgICAgICAibWF4TGVuZ3RoIjogMTAwLAogICAgICAgICAgIm9yeS5zaC9rcmF0b3MiOiB7CiAgICAgICAgICAgICJjcmVkZW50aWFscyI6IHsKICAgICAgICAgICAgICAicGFzc3dvcmQiOiB7CiAgICAgICAgICAgICAgICAiaWRlbnRpZmllciI6IHRydWUKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJ3ZWJhdXRobiI6IHsKICAgICAgICAgICAgICAgICJpZGVudGlmaWVyIjogdHJ1ZQogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInRvdHAiOiB7CiAgICAgICAgICAgICAgICAiYWNjb3VudF9uYW1lIjogdHJ1ZQogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgfQogICAgICAgIH0KICAgICAgfSwKICAgICAgInJlcXVpcmVkIjogWwogICAgICAgICJ1c2VybmFtZSIKICAgICAgXSwKICAgICAgImFkZGl0aW9uYWxQcm9wZXJ0aWVzIjogZmFsc2UKICAgIH0KICB9Cn0K
+oauth2_provider:
+  override_return_to: true
+preview:
+  default_read_consistency_level: strong
+security:
+  account_enumeration:
+    mitigate: true
+selfservice:
+  allowed_return_urls:
+  - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com
+  - /ui/error
+  - /ui/login
+  - /ui/logout
+  - /ui/consent
+  - /ui/welcome
+  - /ui/recovery
+  - /ui/sessions
+  - /ui/settings
+  - /ui/registration
+  - /ui/verification
+  - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/error
+  - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/login
+  - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/recovery
+  - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/settings
+  - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/registration
+  - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/verification
+  default_browser_return_url: /ui/welcome
+  flows:
+    error:
+      ui_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/error
+    login:
+      after:
+        code:
+          hooks: []
+        hooks:
+        - config:
+            body: https://storage.googleapis.com/bac-gcs-production/98137ca33e941284ccea342590b527271d27cb915c7489f50d2e13614264c303f35a2568eac756a060ec7633efd3f7adae896cfe005c7949ce435d2398d4d702.jsonnet
+            can_interrupt: false
+            method: POST
+            response:
+              ignore: false
+              parse: false
+            url: https://rdr8qhdg-5262.euw.devtunnels.ms/weatherforecast
+          hook: web_hook
+        lookup_secret:
+          hooks: []
+        oidc:
+          hooks: []
+        passkey:
+          hooks: []
+        password:
+          hooks: []
+        totp:
+          hooks: []
+        webauthn:
+          hooks: []
+      before:
+        hooks: []
+      lifespan: 30m0s
+      style: unified
+      ui_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/login
+    logout:
+      after: {}
+    recovery:
+      after:
+        hooks: []
+      before:
+        hooks: []
+      enabled: true
+      lifespan: 30m0s
+      notify_unknown_recipients: false
+      ui_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/recovery
+      use: code
+    registration:
+      after:
+        code:
+          hooks: []
+        hooks: []
+        oidc:
+          hooks:
+          - hook: session
+        passkey:
+          hooks:
+          - hook: session
+        password:
+          hooks:
+          - hook: show_verification_ui
+          - hook: session
+        webauthn:
+          hooks:
+          - hook: session
+      before:
+        hooks: []
+      enable_legacy_one_step: true
+      enabled: true
+      lifespan: 30m0s
+      login_hints: true
+      ui_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/registration
+    settings:
+      after:
+        hooks: []
+        lookup_secret:
+          hooks: []
+        oidc:
+          hooks: []
+        passkey:
+          hooks: []
+        password:
+          hooks: []
+        profile:
+          hooks: []
+        totp:
+          hooks: []
+        webauthn:
+          hooks: []
+      before:
+        hooks: []
+      lifespan: 30m0s
+      privileged_session_max_age: 15m0s
+      required_aal: highest_available
+      ui_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/settings
+    verification:
+      after:
+        hooks: []
+      before:
+        hooks: []
+      enabled: true
+      lifespan: 30m0s
+      notify_unknown_recipients: false
+      ui_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/ui/verification
+      use: code
+  methods:
+    b2b:
+      config:
+        organizations: []
+    code:
+      config:
+        lifespan: 15m0s
+      enabled: true
+      mfa_enabled: false
+      passwordless_enabled: true
+    link:
+      config:
+        base_url: ""
+        lifespan: 15m0s
+      enabled: true
+    lookup_secret:
+      enabled: false
+    oidc:
+      config:
+        providers: []
+      enabled: false
+    passkey:
+      config:
+        rp:
+          display_name: Oleh Krotenko's Project
+          id: interesting-chaplygin-524x1dtdto.projects.oryapis.com
+          origins:
+          - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com
+    password:
+      config:
+        haveibeenpwned_enabled: true
+        identifier_similarity_check_enabled: true
+        ignore_network_errors: true
+        max_breaches: 1
+        min_password_length: 8
+      enabled: true
+    profile:
+      enabled: true
+    totp:
+      config:
+        issuer: Oleh Krotenko's Project
+      enabled: false
+    webauthn:
+      config:
+        passwordless: false
+        rp:
+          display_name: Oleh Krotenko's Project
+          id: interesting-chaplygin-524x1dtdto.projects.oryapis.com
+          origins:
+          - https://interesting-chaplygin-524x1dtdto.projects.oryapis.com
+      enabled: false
+serve:
+  admin:
+    base_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/
+    request_log:
+      disable_for_health: true
+  public:
+    base_url: https://interesting-chaplygin-524x1dtdto.projects.oryapis.com/
+    cors:
+      enabled: false
+    request_log:
+      disable_for_health: true
+session:
+  cookie:
+    domain: interesting-chaplygin-524x1dtdto.projects.oryapis.com
+    name: ory_session_interestingchaplygin524x1dtdto
+    path: /
+    persistent: false
+    same_site: Lax
+  lifespan: 72h0m0s
+  whoami:
+    required_aal: highest_available
+    tokenizer:
+      templates: {}
