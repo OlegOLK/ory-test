@@ -35,9 +35,11 @@ jobs:
       run: |
         bash <(curl https://raw.githubusercontent.com/ory/meta/master/install.sh) -b . ory
         sudo mv ./ory /usr/local/bin/
-        ory help
-
+        ory help        
 
     - name: npm update config
       run: |
         ory update identity-config dc18b958-c790-4508-a898-fe1530d452be --file ory.identity.config.yaml
+      env:
+        ORY_API_KEY: ${{ secrets.ORY_PROJECT_API_KEY }}
+        ORY_PROJECT_API_KEY: ${{ secrets.ORY_PROJECT_API_KEY }}
