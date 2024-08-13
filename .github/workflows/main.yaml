@@ -21,6 +21,10 @@ on:
           - pre-production
           - production
     secrets:
+      ORY_USERNAME:
+        required: true
+      ORY_PASSWORD:
+        required: true
       ORY_API_KEY:
         required: true
 
@@ -36,10 +40,23 @@ jobs:
         bash <(curl https://raw.githubusercontent.com/ory/meta/master/install.sh) -b . ory
         sudo mv ./ory /usr/local/bin/
         ory help        
-
+    - run: |
+        /usr/bin/expect <<'EOF'
+        spawn ory auth
+        expect "Do you want to sign in to an existing Ory Network account?"
+        send -- "y\r"
+        expect "Email:"
+        send -- "${{ env.ORY_USERNAME }}\r"
+        expect "Password:"
+        send -- "${{ env.ORY_PASSWORD }}\r"
+        expect eof
+        EOF
+      shell: bash
     - name: npm update config
       run: |
         ory update identity-config dc18b958-c790-4508-a898-fe1530d452be --file ory.identity.config.yaml
       env:
         ORY_API_KEY: ${{ secrets.ORY_PROJECT_API_KEY }}
         ORY_PROJECT_API_KEY: ${{ secrets.ORY_PROJECT_API_KEY }}
+        ORY_USERNAME: ${{ secrets.ORY_USERNAME }}
+        ORY_PASSWORD: ${{ secrets.ORY_PASSWORD }}
