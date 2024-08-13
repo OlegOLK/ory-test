@@ -42,6 +42,7 @@ jobs:
     - run: sudo apt-get install -y expect
       shell: bash
     - run: |
+        /usr/bin/expect <<'EOF'
         spawn ory auth
         expect "Do you want to sign in to an existing Ory Network account?"
         send -- "y\r"
@@ -51,7 +52,6 @@ jobs:
         send -- "${{ env.ORY_PASSWORD }}\r"
         expect eof
         EOF
-      shell: bash
     - name: npm update config
       run: |
         ory update identity-config dc18b958-c790-4508-a898-fe1530d452be --file ory.identity.config.yaml
