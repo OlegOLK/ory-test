@@ -47,9 +47,9 @@ jobs:
         expect "Do you want to sign in to an existing Ory Network account?"
         send -- "y\r"
         expect "Email:"
-        send -- "${{ env.ORY_USERNAME }}\r"
+        send -- "${{ secrets.ORY_USERNAME }}\r"
         expect "Password:"
-        send -- "${{ env.ORY_PASSWORD }}\r"
+        send -- "${{ secrets.ORY_PASSWORD }}\r"
         expect eof
         EOF
     - name: npm update config
