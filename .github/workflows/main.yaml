@@ -44,7 +44,7 @@ jobs:
     - run: |
         /usr/bin/expect <<'EOF'
         spawn ory auth
-        expect "Do you want to sign in to an existing Ory Network account?"
+        expect "Do you want to sign in to an existing Ory Network account? [y/n]"
         send -- "y\r"
         expect "Email:"
         send -- "${{ env.ORY_USERNAME }}\r"
