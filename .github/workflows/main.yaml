@@ -34,14 +34,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-
     - name: Set up ORY CLI
       run: |
         bash <(curl https://raw.githubusercontent.com/ory/meta/master/install.sh) -b . ory
         sudo mv ./ory /usr/local/bin/
-        ory help        
+        ory help
+    - run: sudo apt-get install -y expect
+      shell: bash
     - run: |
-        /usr/bin/expect <<'EOF'
         spawn ory auth
         expect "Do you want to sign in to an existing Ory Network account?"
         send -- "y\r"
